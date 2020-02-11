@@ -16,9 +16,9 @@
 	$(window).load(function() {
 	    "use strict";
 		// will fade loading animation
-		$("#object").delay(200).fadeOut(100);
+		$("#object").delay(0).fadeOut(0);
 		// will fade loading background					
-		$("#loading").delay(400).fadeOut(150);
+		$("#loading").delay(0).fadeOut(0);
 	})
 	
 	/* ==========================
