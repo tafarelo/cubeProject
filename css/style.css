@@ -277,12 +277,15 @@ section h2 {
 
 #header-section h1 {
 	margin-top: 48px;
+	margin-bottom: 35px;
 }
 
 #header-section p {
 	font-size: 18px; /* PIXEL FALLBACK */
 	font-size: 1.8rem;
 	color:#fff;
+	text-align: justify;
+  	text-justify: inter-word;
 }
 
 ul.header-list {
@@ -297,6 +300,8 @@ ul.header-list li {
 	list-style: outside none;
 	margin-bottom: 26px;
 	padding-left: 60px;
+	text-align: justify;
+	text-justify: inter-word;
 
 }
 
@@ -304,6 +309,8 @@ ul.header-list li {
 	.media-fix-1 .header-list li {
 		background-image: none;
 		padding-left: 0px;
+		text-align: justify;
+		text-justify: initial;
 	}
 }
 
@@ -314,7 +321,7 @@ ul.header-list li {
 
 .submit-form-position{
 	position:absolute;
-	top:-30px;
+	top:50px;
 	}
 	
 .submit-form-position img{
@@ -407,7 +414,9 @@ ul.header-list li {
 /*---------------------------------------
    5.1 BASIC STYLE           
 -----------------------------------------*/
-
+.margin-bottom-fix-1{
+padding: 10px 0;
+}
 #brands-section h3 {
 	font-weight: bold;
 	margin: 0 0 30px;
@@ -415,12 +424,15 @@ ul.header-list li {
 }
 
 .width-fix-1{
-	float: left;
-	right: 100px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 200px;
+	text-align:center;
 }
 .width-fix-1 h3{
-	font-size: 2rem;
+	font-size: 2.5rem;
 	padding: 5px;
+	font-weight: bold;
 }
 
 .brand-logo {
@@ -437,9 +449,6 @@ ul.header-list li {
 	padding: 10px;
 }
 
-.brand-logo.padd-right {
-	margin-right:3%;
-}
 
 @media (max-width: 1400px){
 	.width-fix-1{
