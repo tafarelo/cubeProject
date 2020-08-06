@@ -61,6 +61,7 @@ body {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	color: #8f96a9;
+	min-height: 100%;
 }
 
 button {
@@ -115,6 +116,7 @@ iframe {
 
 html{
 max-width: 100%;
+min-height: 100%;
 	}
 
 h1 {
@@ -275,6 +277,7 @@ section h2 {
 
 ul.header-list {
 	padding: 0px;
+	
 }
 
 ul.header-list li {
@@ -313,21 +316,43 @@ ul.header-list li {
 .submit-form {
 	background: #f6f6f6;
 	padding: 0 20px 43px;
-	width:100%;
-	float:left;
+	float:right;
 	border-radius: 20px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-25%, -50%);
+}
+
+@media (max-width: 1199px){
+	.submit-form {
+		transform: translate(-14%, -50%);
+	}
+}
+@media (max-width: 991px){
+	.submit-form {
+		transform: translate(-63%, -50%);
+	}
+}
+@media (max-width: 768px){
+	.submit-form {
+		top: 0%;
+		left:0%;
+		transform: translate(0%, 0%);
+		width: 100%;
+	}
 }
 
 .submit-form h3 {
-    margin: 44px 0 20px;
+    margin: 10px 0px -33px;
 	text-align: center !important;
-    font-weight: bold;
-
+	letter-spacing: 1.5px;
+	width: 100%;
+	font-family: 'Oswald', sans-serif;
 }
 
 .submit-form p {
 	color: #000 !important;
-	margin: 30px 0 0;
+	margin: 0px 0 0;
 	padding: 0;
 	text-align: center;
 	width: 100%;
@@ -542,6 +567,7 @@ ul.header-list-2 li {
 	ul.header-list-2 li {
 		background-image: none;
 		padding-left: 0px;
+		padding-right: 38px;
 	}
 }
 
@@ -590,6 +616,7 @@ ul.header-list-2 li {
 -----------------------------------------*/
 #footer {
 	height: 100%;
+	bottom: 0;
 }
 
 #footer-section {
@@ -713,7 +740,11 @@ h1{
 }
 
 h2{
-	font-size: 1.9rem;
+	font-size: 2.3rem;
+	font-weight: bold;
+}
+h3{
+	font-size: 1.8rem;
 }
 p{
 	font-size: 1.5rem;
@@ -910,4 +941,37 @@ iframe{
 .arrows span {
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+#comprar-nav {
+	padding: 10px;
+	background: linear-gradient(90deg, rgba(7,113,223,1) 0%, rgba(7,113,223,1) 49%, rgba(91,165,242,1) 100%);
+}
+
+.comprar-section {
+	height: 100%;
+	width: 100%;
+	display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+}
+.img-comprar{
+	width: 100%;
+	height: 50%;
+}
+.card {
+	margin: 30px;
+	width: 100%;
+	height: 100%;
+
+}
+
+@media (max-width:945px){
+	.comprar-section{
+		flex-flow: column;
+		align-items: center;
+	}
+	.card {
+		margin: 30px;
+	}
 }
